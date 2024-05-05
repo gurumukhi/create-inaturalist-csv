@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBird to iNaturalist Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>eBird to iNaturalist CSV Converter</h1>
+        <label for="">Select eBird CSV File:</label>
+        <input type="file" id="fileInput" accept=".csv">
+        <br /><label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" placeholder="Enter latitude">
+        <br /><label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" placeholder="Enter longitude">
+        <br /><label for="Date">Date (yyyy-mm-dd):</label>
+        <input type="text" id="date" placeholder="Enter Date (yyyy-mm-dd)">
+        <br /><br /><button onclick="convert()">Convert</button>
+        <br /><br /><a id="downloadLink" style="display: none;" download="converted_data.csv">Download Converted
+            Data</a>
+        <br /><br /><a id="" href="https://www.inaturalist.org/observations/import#csv_import" target="_blank">Goto
+            iNaturalist CSV import page</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
